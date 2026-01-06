@@ -1,6 +1,6 @@
 FROM eclipse-temurin:21-jre
 WORKDIR /app
-COPY ./app.jar app.jar
+COPY ./app.jar /app/app.jar
 
 # 기본값(필요하면 런타임에 덮어씀)
 ENV SPRING_PROFILES_ACTIVE=mysql-dev-group
