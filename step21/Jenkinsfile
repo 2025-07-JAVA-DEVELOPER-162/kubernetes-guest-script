@@ -43,7 +43,7 @@ pipeline {
                     if (DOCKERHUB_USERNAME == "academyitwill") {
                         sh "docker push ${DOCKERHUB_USERNAME}/guest"
                     }else {
-                        sh "docker push ${DOCKERHUB_USERNAME}/guest"
+                        //sh "docker push ${DOCKERHUB_USERNAME}/guest"
                     }
                 }
             }
