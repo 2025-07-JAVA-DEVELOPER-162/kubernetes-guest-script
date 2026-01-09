@@ -65,6 +65,8 @@ pipeline {
                     }
                     if (returnValue == "rollback") {
                         sh "kubectl patch -n guest-namespace-step23 svc guest-service -p '{\"spec\": {\"selector\": {\"blue-green-no\": \"1\"}}}'"
+                        sh "kubectl delete -f ./${STEP_NUM}/deploy/k8s/green/deployment.yaml"
+                        sh "kubectl delete -f ./${STEP_NUM}/deploy/k8s/green/service.yaml"
                     }
                 }
             }
