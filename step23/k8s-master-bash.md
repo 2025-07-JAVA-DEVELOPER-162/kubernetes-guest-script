@@ -32,7 +32,7 @@
 
 ```
 
-# NodePort 30023
+# NodePort 30123
   - [부라우져]  http://192.168.56.32:30123 
 
    >![alt text](image-2.png)
