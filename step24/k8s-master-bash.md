@@ -17,7 +17,7 @@
 
 ```
 
-# NodePort 30024
+### NodePort 30024
   - [부라우져]  http://192.168.56.30:30024
 
    >![alt text](image.png)
